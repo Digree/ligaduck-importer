@@ -1,7 +1,7 @@
 steps:
   # Build immagine Docker
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-f', 'dockerfile', '-t', 'gcr.io/$PROJECT_ID/ligaduck-importer', '.']
+    args: ['build', '-f', 'Dockerfile', '-t', 'gcr.io/$PROJECT_ID/ligaduck-importer', '.']
 
   # Push immagine
   - name: 'gcr.io/cloud-builders/docker'
