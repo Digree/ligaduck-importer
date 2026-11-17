@@ -3,6 +3,7 @@ package com.example.ligaduckimporter.service;
 import com.example.ligaduckimporter.model.Giocatore;
 import com.example.ligaduckimporter.model.Partita;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
@@ -26,15 +27,18 @@ public class ImportClientService {
         return restClient.post()
                 .uri(importUrl + "/{campionato}/import/giocatori", campionato)
                 .body(giocatori)
-                .retrieve()
-                .toEntity(String.class);
+                .exchange((request, response) -> ripulisci(response.getStatusCode().value(), response.bodyTo(String.class)));
     }
 
     public ResponseEntity<String> inviaPartita(String campionato, List<Partita> partite, String idGiornata) {
         return restClient.post()
                 .uri(importUrl + "/{campionato}/import/partita/{idGiornata}", campionato, idGiornata)
                 .body(partite)
-                .retrieve()
-                .toEntity(String.class);
+                .exchange((request, response) -> ripulisci(response.getStatusCode().value(), response.bodyTo(String.class)));
+    }
+
+    // Gli header del backend (Transfer-Encoding, Content-Length...) non vanno rimbalzati al client.
+    private static ResponseEntity<String> ripulisci(int status, String body) {
+        return ResponseEntity.status(status).contentType(MediaType.APPLICATION_JSON).body(body);
     }
 }
