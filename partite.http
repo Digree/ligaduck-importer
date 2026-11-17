@@ -1,0 +1,95 @@
+POST http://localhost:8081/api/import/partita/6afc2ef5b5844a2caedf4a18/43
+Content-Type: application/json
+
+[
+  
+
+{
+  "data": null,
+  "id_squadra_home": "PAPERBOTAFOGO",
+  "id_squadra_away": "SEATTLEPIPP SOUNDERS",
+  "gol_home": 9,
+  "gol_away": 1,
+  "formazione_home": {
+    "titolari": [
+      {"pos": 1, "id_giocatore": null, "nome": "Narciso", "in_campo": true, "capitano": false},
+      {"pos": 5, "id_giocatore": null, "nome": "Andrè Dias", "in_campo": true, "capitano": false},
+      {"pos": 6, "id_giocatore": null, "nome": "Evaristo", "in_campo": true, "capitano": false},
+      {"pos": 2, "id_giocatore": null, "nome": "Zè Elias", "in_campo": true, "capitano": false},
+      {"pos": 3, "id_giocatore": null, "nome": "Fabricio", "in_campo": true, "capitano": false},
+      {"pos": 4, "id_giocatore": null, "nome": "Assunção", "in_campo": true, "capitano": false},
+      {"pos": 7, "id_giocatore": null, "nome": "Damião", "in_campo": true, "capitano": false},
+      {"pos": 8, "id_giocatore": null, "nome": "Diego Alves", "in_campo": true, "capitano": false},
+      {"pos": 10, "id_giocatore": null, "nome": "Maximiano", "in_campo": true, "capitano": false},
+      {"pos": 11, "id_giocatore": null, "nome": "Everton", "in_campo": true, "capitano": false},
+      {"pos": 9, "id_giocatore": null, "nome": "Leonidas", "in_campo": true, "capitano": false}
+    ],
+    "panchina": [
+      {"pos": 12, "id_giocatore": null, "nome": "Glaucio", "in_campo": false, "capitano": false},
+      {"pos": 13, "id_giocatore": null, "nome": "De Moraes", "in_campo": false, "capitano": false},
+      {"pos": 14, "id_giocatore": null, "nome": "Caio Ribeiro", "in_campo": false, "capitano": false},
+      {"pos": 15, "id_giocatore": null, "nome": "Aloisio", "in_campo": false, "capitano": false},
+      {"pos": 16, "id_giocatore": null, "nome": "Galhardo", "in_campo": false, "capitano": false},
+      {"pos": 17, "id_giocatore": null, "nome": "Bahia", "in_campo": false, "capitano": false},
+      {"pos": 18, "id_giocatore": null, "nome": "Lima", "in_campo": false, "capitano": false}
+    ],
+    "indisponibili": [],
+    "non_convocati": [],
+    "allenatore": "Barroso Da Silva",
+    "modulo": "4-3-2-1"
+  },
+  "formazione_away": {
+    "titolari": [
+      {"pos": 1, "id_giocatore": null, "nome": "DeLeon", "in_campo": true, "capitano": false},
+      {"pos": 5, "id_giocatore": null, "nome": "Benedek", "in_campo": true, "capitano": false},
+      {"pos": 6, "id_giocatore": null, "nome": "Califano", "in_campo": true, "capitano": false},
+      {"pos": 2, "id_giocatore": null, "nome": "Dunseth", "in_campo": true, "capitano": false},
+      {"pos": 3, "id_giocatore": null, "nome": "Lagos", "in_campo": true, "capitano": false},
+      {"pos": 4, "id_giocatore": null, "nome": "Bocanegra", "in_campo": true, "capitano": false},
+      {"pos": 7, "id_giocatore": null, "nome": "Gabarra", "in_campo": true, "capitano": false},
+      {"pos": 8, "id_giocatore": null, "nome": "Overbeck", "in_campo": true, "capitano": false},
+      {"pos": 10, "id_giocatore": null, "nome": "Macaluso", "in_campo": true, "capitano": false},
+      {"pos": 9, "id_giocatore": null, "nome": "Buddle", "in_campo": true, "capitano": false},
+      {"pos": 11, "id_giocatore": null, "nome": "Corrales", "in_campo": true, "capitano": false}
+    ],
+    "panchina": [
+      {"pos": 12, "id_giocatore": null, "nome": "January", "in_campo": false, "capitano": false},
+      {"pos": 13, "id_giocatore": null, "nome": "Razov", "in_campo": false, "capitano": false},
+      {"pos": 14, "id_giocatore": null, "nome": "Vitanza", "in_campo": false, "capitano": false},
+      {"pos": 15, "id_giocatore": null, "nome": "Findlay", "in_campo": false, "capitano": false},
+      {"pos": 16, "id_giocatore": null, "nome": "Dorrance", "in_campo": false, "capitano": false},
+      {"pos": 17, "id_giocatore": null, "nome": "Klopas", "in_campo": false, "capitano": false},
+      {"pos": 18, "id_giocatore": null, "nome": "Nogueira", "in_campo": false, "capitano": false}
+    ],
+    "indisponibili": [],
+    "non_convocati": [],
+    "allenatore": "Di Cicco",
+    "modulo": "4-3-3"
+  },
+  "tabellino": [
+    {"tipo": "gol", "squadra": "PAPERBOTAFOGO", "giocatore": "Maximiano", "minuto": 3},
+    {"tipo": "gol", "squadra": "PAPERBOTAFOGO", "giocatore": "Leonidas", "minuto": 6},
+    {"tipo": "gol", "squadra": "PAPERBOTAFOGO", "giocatore": "Everton", "minuto": 15},
+    {"tipo": "gol", "squadra": "PAPERBOTAFOGO", "giocatore": "Assunção", "minuto": 28},
+    {"tipo": "gol", "squadra": "PAPERBOTAFOGO", "giocatore": "Evaristo", "minuto": 31},
+    {"tipo": "gol", "squadra": "PAPERBOTAFOGO", "giocatore": "Damião", "minuto": 56},
+    {"tipo": "gol", "squadra": "SEATTLEPIPP SOUNDERS", "giocatore": "Macaluso", "minuto": 65},
+    {"tipo": "gol", "squadra": "PAPERBOTAFOGO", "giocatore": "Diego Alves", "minuto": 70},
+    {"tipo": "gol", "squadra": "PAPERBOTAFOGO", "giocatore": "Diego Alves", "minuto": 78},
+    {"tipo": "gol", "squadra": "PAPERBOTAFOGO", "giocatore": "Maximiano", "minuto": 86},
+    {"tipo": "sos", "squadra": "PAPERBOTAFOGO", "giocatore_uscito": "Fabricio", "giocatore_entrato": "Caio Ribeiro", "minuto": null, "priorita": 1},
+    {"tipo": "sos", "squadra": "PAPERBOTAFOGO", "giocatore_uscito": "Everton", "giocatore_entrato": "Bahia", "minuto": null, "priorita": 2},
+    {"tipo": "sos", "squadra": "PAPERBOTAFOGO", "giocatore_uscito": "Leonidas", "giocatore_entrato": "Galhardo", "minuto": null, "priorita": 3},
+    {"tipo": "sos", "squadra": "SEATTLEPIPP SOUNDERS", "giocatore_uscito": "Gabarra", "giocatore_entrato": "Dorrance", "minuto": null, "priorita": 1},
+    {"tipo": "sos", "squadra": "SEATTLEPIPP SOUNDERS", "giocatore_uscito": "Buddle", "giocatore_entrato": "Nogueira", "minuto": null, "priorita": 2},
+    {"tipo": "sos", "squadra": "SEATTLEPIPP SOUNDERS", "giocatore_uscito": "Macaluso", "giocatore_entrato": "Klopas", "minuto": null, "priorita": 3}
+  ],
+  "divisa_home": 1,
+  "divisa_away": 1,
+  "salvata": false,
+  "id_nazionale_home": "",
+  "id_nazionale_away": "",
+  "_class": "coMIAMIligaduck.ligaduck_bff.model.partita.Partita"
+}
+
+]

@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-LigaduckImporterApplication<spring-pdf-parser>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.ligaduckimporter.LigaduckImporterApplication",
+            "projectName": "spring-pdf-parser",
+            "console": "internalConsole",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
