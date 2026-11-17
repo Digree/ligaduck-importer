@@ -1,0 +1,26 @@
+steps:
+  # Build immagine Docker
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-f', 'dockerfile', '-t', 'gcr.io/$PROJECT_ID/ligaduck-importer', '.']
+
+  # Push immagine
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/$PROJECT_ID/ligaduck-importer']
+
+  # Deploy su Cloud Run
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: gcloud
+    args:
+      [
+        'run', 'deploy', 'ligaduck-importer',
+        '--image', 'gcr.io/$PROJECT_ID/ligaduck-importer',
+        '--region', 'europe-west1',
+        '--platform', 'managed',
+        '--allow-unauthenticated'
+      ]
+
+images:
+  - 'gcr.io/$PROJECT_ID/ligaduck-importer'
+
+options:
+  logging: CLOUD_LOGGING_ONLY
